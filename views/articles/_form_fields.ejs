@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="title">Title</label>
+    <input required value="<%= article.title %>" type="text" name="title" id="title" class="form-control" />
+    <!-- when you type required in front of type you are saying that have to type something in or with with give you are warning -->
+<div class="form-group">
+    <label for="description">Descrition</label>
+    <textarea name="description" id="description" class="form-control" value="<%= article.description %>"></textarea>
+<div class="form-group">
+    <label for="markdown">Markdown</label>
+    <textarea required name="markdown" id="markdown" class="form-control" value="<%= article.markdown %>"></textarea>
+</div>
+<a href="/" class="btn btn-secondary">Cancel</a>
+<button type="submit" class="btn btn-primary">Save</button>
